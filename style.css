@@ -1,0 +1,161 @@
+
+body {
+     margin: 0;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    background-image: url("./images/istockphoto-1385726058-612x612.jpg");
+    background-size:cover ;
+    position: relative;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.python{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left:50%;
+    bottom:10%;
+    transform: scale(1.5);
+    opacity: 0.9;
+  
+}
+.arduino{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right:50%;
+    bottom:90%;
+    animation:swim 5s infinite  ease-in-out normal;
+    opacity: 0.8;
+}
+.whaleshark{
+    position:absolute;
+    cursor: pointer;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation:swim 20s infinite  ease-in-out normal;
+    opacity: 0.8;
+}
+.webfish{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right:30%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    animation:swim 10s infinite ease-in-out normal ;
+    opacity: 0.8;
+
+}
+.cfish{
+    position: absolute;
+    display: inline-block;
+    top:30%;
+    animation:swim 10s infinite  ease-in-out normal;
+    opacity: 0.8;
+}
+@media (min-width: 500px) {
+    @keyframes swim {
+        0% {
+            transform: translate(0, 0) scaleX(-1);
+        }
+        24% {
+            transform: translate(500px, 10px) scaleX(-1);
+        }
+        25% {
+            transform: translate(500px, 70px) scaleX(1);
+        }
+        49% {
+            transform: translate(700px, 100px) scaleX(1);
+        }
+        50% {
+            transform: translate(700px, 100px) scaleX(1);
+        }
+        73% {
+            transform: translate(350px, -200px) scaleX(1);
+        }
+        74% {
+            transform: translate(350px, -200px) scaleX(1);
+        }
+        99% {
+            transform: translate(0, 0) scaleX(1);
+        }
+        100% {
+            transform: translate(0, 0) scaleX(-1);
+        }
+    }
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(0, 0) scaleX(-1);
+    }
+    24% {
+        transform: translate(100px, 90px) scaleX(-1);
+    }
+    25% {
+        transform: translate(100px, 90px) scaleX(1);
+    }
+    49% {
+        transform: translate(250px, 250px) scaleX(1);
+    }
+    50% {
+        transform: translate(250px, 250px) scaleX(1);
+    }
+    73% {
+        transform: translate(150px, 150px) scaleX(1);
+    }
+    74% {
+        transform: translate(150px, 150px) scaleX(1);
+    }
+    99% {
+        transform: translate(0, 0) scaleX(1);
+    }
+    100% {
+        transform: translate(0, 0) scaleX(-1);
+    }
+}
+
+
+
+.Card{
+    display: none;
+    background-image: linear-gradient(to bottom,black,grey);
+position: absolute;
+top:50%;
+left:50%;
+color:whitesmoke;
+transform:translate(-50%,-50%);
+width:400px;
+height: 200px;
+overflow:auto;
+padding:30px;
+z-index: 3;
+border: 1px black solid;
+font-size: larger;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Card i {
+    position: absolute;
+    align-items: right;
+    border:1px white solid;
+    right:10%;
+    padding:5px;
+    background-color: white;
+    color:black;
+}
+
+
+.Card.active{
+    display: block;
+}
+
+
