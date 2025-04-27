@@ -14,7 +14,14 @@ body {
     height: 100%;
     overflow: hidden;
 }
-
+.heading{
+    font-weight: 400;
+    font-size: medium;
+    background-color: rgba(34, 179, 182, 0.3);
+    z-index: 1000;
+    width:300px;
+    color:
+}
 .python{
     display: inline-block;
     position: absolute;
@@ -38,9 +45,7 @@ body {
     position:absolute;
     cursor: pointer;
     display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-
+   
     animation:swim 20s infinite  ease-in-out normal;
     opacity: 0.8;
 }
